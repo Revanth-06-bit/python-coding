@@ -1,0 +1,5 @@
+values=input("Input some comma seperated numbers:")
+list=values.solit(",")
+tuple=tuple(list)
+print('List:',list)
+print('Tuple:',tuple)
