@@ -1,0 +1,19 @@
+import math 
+ def ball_collide(X1,Y1,r1,X2,Y2,r2):
+#calculate the distance between the center of the two balls
+ dist=math.sqrt((X2-X1)**2+(Y2-Y1)**2)
+ print("Distance between the two balls:",dist)
+#calculate the sum of the radii of the two balls
+r=r1+r2
+print("Sum of radii:",r)
+#check if the distance between the centers is less than or equal to the sum of the radii
+if dist<=r:
+ print("They are colliding")
+ return True
+else:
+ print("Not colliding")
+ return False
+c1=ball_collide(4,4,3,2,2,3)
+print(c1)
+c2=ball_collide(100,200,20,200,100,10)
+print(c2)
